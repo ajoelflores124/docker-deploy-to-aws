@@ -21,7 +21,7 @@ jobs:
       uses: docker/login-action@v3
       with:
           # registry: <aws-account-numer>
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN}}
     - name: Build and Push
       uses: docker/build-push-action@v5
