@@ -2,7 +2,7 @@ name: example
 on:
   push:
     branches:
-    - main
+    - master
 
 env:
   SSH_KEYPAIR: ${{ secrets.SSH_KEYPAIR }}
